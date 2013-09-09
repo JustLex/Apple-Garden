@@ -12,6 +12,9 @@ public class AppleTree {
 		Random rand = new Random();
 		apples = new Apple[rand.nextInt(50)];
 		applesCount = apples.length;
+		for(int i = 0; i < applesCount; i++){
+			apples[i] = new Apple();
+		}
 	}
 	
 	public int punch(){
